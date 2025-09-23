@@ -1,9 +1,6 @@
 # SECURE AUTHENTICATION TO AWS API.
 ## This project will demonstarte how to setup secure authentication in AWS.
 
-### Create IAM Policy.
-
-
 
 ### Create IAM Role.
 
@@ -42,6 +39,44 @@
 9. You should a confirmation page indicating success.
 
 ![](./img/Pasted%20image%20(16).png)
+
+
+### Create IAM Policy.
+
+1. On your IAM dashboard click 'Policies'.
+
+![](./img/Pasted%20image%20(18).png)
+
+2. Towards the top right of the policies window, click 'Create policy'
+
+![](./img/Pasted%20image%20(19).png)
+
+3. Select 'EC2'on the 'select a service' option;
+
+![](./img/Pasted%20image%20(20).png)
+
+4. Scroll down to add services and select 'S3'
+
+![](./img/Pasted%20image%20(21).png)
+
+5. Scroll down and click 'Next'
+
+![](./img/Pasted%20image%20(22).png)
+
+6. Add a name and description to the policy.
+
+![alt text](./img/Pasted%20image%20(23).png)
+
+7. Scroll down and click 'Create policy'
+
+![](./img/Pasted%20image%20(24).png)
+
+8. You should a success page confirming policy creation.
+
+![](./img/Pasted%20image%20(25).png)
+
+
+
 
 ### Create an IAM User.
 

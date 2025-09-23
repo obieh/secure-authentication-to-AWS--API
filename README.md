@@ -109,3 +109,40 @@
 7. You should see a success page, implying user have been successfully. Download the user credentials.
 
 ![](./img/Pasted%20image%20(29).png)
+
+
+### Attach user to IAM Role
+
+1. Select users on the IAM dashboard, then click on the user you created earlier.
+
+![](./img/Pasted%20image%20(30).png)
+
+2. As seen, the role is already added to the user directly. Click 'Add permission'.
+
+![](./img/Pasted%20image%20(31).png)
+
+3. Select json for the policy editor. On the statement object, change the value of the 'Actions' key to 'sts:AssumeRole', and value of resource to the arn of the role you created. Click Next to finish.
+
+![](./img/Pasted%20image%20(36).png)
+
+### Link the role to Policy
+
+1. Go to 'Roles', click on the role you created.
+
+![](./img/Pasted%20image%20(37).png)
+
+2. Check the two AWS managed permission,(ec2 and s3) and click add permissions.
+
+![](./img/Pasted%20image%20(38).png)
+
+3. Search the policy name or filter by type "Customer managed". Select the policy and click 'Add permission'
+
+![](./img/Pasted%20image%20(39).png)
+
+4. A success page pops up indicating success in role policy link.
+
+![](./img/Pasted%20image%20(40).png)
+
+5. Verify by clicking on the role to see permissions.
+
+![](./img/Pasted%20image%20(41).png)

@@ -92,6 +92,20 @@
 
 ![](./img/Pasted%20image%20(5).png)
 
-4. Add a name for the user and click 'Next'
+4. Add a name for the user,check 'Provide user access to the AWS Management Console', Choose creation format and click 'Next'
 
-![](./img/Pasted%20image%20(6).png)
+![](./img/Pasted%20image%20(26).png)
+
+5. On 'Permisions' click 'Attach policies directly'. Select the 'API-demo-policy' you created previously, then click 'Next'.
+
+![](./img/Pasted%20image%20(27).png)
+
+
+6. Review to check if all desired settings are correct, then click 'Create user'
+
+
+![](./img/Pasted%20image%20(28).png)
+
+7. You should see a success page, implying user have been successfully. Download the user credentials.
+
+![](./img/Pasted%20image%20(29).png)

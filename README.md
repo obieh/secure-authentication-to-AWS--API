@@ -146,3 +146,41 @@
 5. Verify by clicking on the role to see permissions.
 
 ![](./img/Pasted%20image%20(41).png)
+
+### Downloading and Installing AWS CLI(Linux).
+
+1. Download awscli. Run `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+`
+2. Run `unzip awslive2.zip` to unzip the file.
+
+3. Run the installer, `sudo ./aws/install`
+
+### Configure AWS CLI.
+
+1. get hold of the IAM user details you created earlier.
+
+2. On your terminal run `aws configure` to beigin aws cli configuration.
+
+![](./img/Pasted%20image%20(42).png)
+
+3. Enter IAM user AWS access key.
+
+![](./img/Pasted%20image%20(43).png)
+
+4. Enter IAM user AWS Secret Access key.
+
+![](./img/Pasted%20image%20(44).png)
+
+5. Specify Default AWS region
+
+![](./img/Pasted%20image%20(45).png)
+
+6. Type json as output format.
+
+![](./img/Pasted%20image%20(46).png)
+
+### Now your configuration is done.
+
+![](./img/Pasted%20image%20(47).png)
+
+7. To test the configuration, run `aws ec2 describe-regions --output table`

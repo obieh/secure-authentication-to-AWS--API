@@ -183,4 +183,25 @@
 
 ![](./img/Pasted%20image%20(47).png)
 
-7. To test the configuration, run `aws ec2 describe-regions --output table`
+7. To test aws cli configuration run `aws sts get-caller-idenditity`. The out put should match the details of the IAM user you created earlier.
+
+![](./img/Pasted%20image%20(49).png)
+
+8. To further test the configuration, run `aws ec2 describe-regions --output table`
+
+![](./img/Pasted%20image%20(48).png)
+
+
+## Summary
+
+*  AWS CLI:
+The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services. With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts. The AWS CLI provides direct access to the public APIs of AWS services. You can use the AWS CLI to perform all the same tasks that you can do with the AWS Management Console, but in a programmatic way.
+ 
+* AWS APIs:
+AWS APIs are the application programming interfaces provided by AWS for its services. These APIs are HTTP endpoints that allow you to programmatically interact with AWS services. Each AWS service has its own API, and these APIs are what the AWS Management Console, AWS CLI, and AWS SDKs use under the hood to perform operations. The most common type of AWS API is the REST API, which uses HTTP methods (like GET, POST, PUT, DELETE) and JSON or XML for data exchange.
+
+* Authenticating to AWS API from terminal:
+When using the terminal to interact with AWS (either via the AWS CLI or by making direct HTTP requests to the AWS APIs), you need to authenticate your requests. AWS requires that every request to its API is signed with AWS credentials. These credentials are used to verify your identity and permissions. The primary way to authenticate from the terminal is by using the AWS CLI, which handles the signing process for you. You first need to configure the AWS CLI with your credentials. These credentials can be:
+  
+  - An IAM user's access key ID and secret access key.
+  - Temporary security tokens (like those from assuming an IAM role) that include an access key ID, secret access key, and a session token
